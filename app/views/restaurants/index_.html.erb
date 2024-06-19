@@ -4,7 +4,8 @@
   <ul>
     <% @restaurants.each do |restaurant| %>
       <li>
-        <%= link_to restaurant.name, restaurant_path(restaurant) %>
+        <%#= link_to restaurant.name, restaurant_path(restaurant) %>
+        <%= restaurant.name %> |
         <%= restaurant.address %> |
         <%= restaurant.phone_number %> |
         <%= restaurant.category %>
@@ -13,5 +14,5 @@
   </ul>
 </div>
 <div>
-  <%= link_to 'Add a new restaurant', new_restaurant_path, class: "btn btn-primary" %>
+  <%#= link_to 'Add a new restaurant', new_restaurant_path, class: "btn btn-primary" %>
 </div>
